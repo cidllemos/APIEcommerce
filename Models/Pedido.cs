@@ -9,8 +9,13 @@ namespace APIEcommerce.Models
     [Table("Pedido")]
     public class Pedido : BaseModel
     {
+        public Pedido()
+        {
+            Itens = new List<PedidoItem>();
+        }
+
         [ExplicitKey]
-        public int Id { get; set; }
+        public int IdPedido { get; set; }
         public DateTime DataCriacao { get; set; }
         public DateTime DataEntrega { get; set; }
         public string Endereco { get; set; }

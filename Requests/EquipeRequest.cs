@@ -7,7 +7,7 @@ namespace APIEcommerce.Requests
 {
     public class EquipeRequest
     {
-        public int Id { get; set; }
+        public int IdEquipe { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
         public string PlacaVeiculo { get; set; }

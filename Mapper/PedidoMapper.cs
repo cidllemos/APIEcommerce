@@ -11,7 +11,7 @@ namespace APIEcommerce.Mapper
         {
             return new Pedido()
             {
-                Id = pedido.Id,
+                IdPedido = pedido.IdPedido,
                 DataCriacao = pedido.DataCriacao,
                 DataEntrega = pedido.DataEntrega,
                 Endereco = pedido.Endereco,
@@ -25,13 +25,13 @@ namespace APIEcommerce.Mapper
         {
             return new PedidoResponse()
             {
-                Id = pedido.Id.ToString(),
+                IdPedido = pedido.IdPedido.ToString(),
                 DataCriacao = pedido.DataCriacao.ToString(),
                 DataEntrega = pedido.DataEntrega.ToString(),
                 Endereco = pedido.Endereco,
                 Cliente = ClienteMapper.Mapper(pedido.Cliente),
                 Equipe = EquipeMapper.Mapper(pedido.Equipe),
-                Itens = pedido.Itens.Select(p => PedidoItemMapper.Mapper(p)).ToList()
+                //Itens = pedido.Itens.Select(x => PedidoItemMapper.Mapper(x)).ToList()
             };
         }
     }

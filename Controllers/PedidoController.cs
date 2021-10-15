@@ -15,8 +15,8 @@ namespace APIEcommerce.Controllers
         [HttpGet]
         public ActionResult<List<PedidoResponse>> Get()
         {
-            var clientes = PedidoRepository.Buscar().Select(p => PedidoMapper.Mapper(p));
-            return clientes.ToList();
+            var pedidos = PedidoRepository.Buscar().Select(p => PedidoMapper.Mapper(p));
+            return pedidos.ToList();
         }
 
         [HttpGet("{id}")]

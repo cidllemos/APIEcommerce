@@ -10,7 +10,8 @@ namespace APIEcommerce.Mapper
         {
             return new PedidoItem()
             {
-                Pedido = PedidoMapper.Mapper(pedidoItem.Pedido),
+                IdPedidoItem = pedidoItem.IdPedidoItem,
+                IdPedido = pedidoItem.idPedido,
                 Produto = ProdutoMapper.Mapper(pedidoItem.Produto),
                 Quantidade = pedidoItem.Quantidade,
                 ValorProduto = pedidoItem.ValorProduto
@@ -21,7 +22,8 @@ namespace APIEcommerce.Mapper
         {
             return new PedidoItemResponse()
             {
-                Pedido = PedidoMapper.Mapper(pedidoItem.Pedido),
+                idPedidoItem = pedidoItem.IdPedidoItem.ToString(),
+                idPedido = pedidoItem.IdPedido.ToString(),
                 Produto = ProdutoMapper.Mapper(pedidoItem.Produto),
                 Quantidade = pedidoItem.Quantidade.ToString(),
                 ValorProduto = pedidoItem.ValorProduto.ToString()

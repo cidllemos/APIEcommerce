@@ -10,7 +10,7 @@ namespace APIEcommerce.Mapper
         {
             return new Cliente()
             {
-                Id = cliente.Id,
+                IdCliente = cliente.IdCliente,
                 Nome = cliente.Nome,
                 Contato = cliente.Contato
             };
@@ -20,7 +20,7 @@ namespace APIEcommerce.Mapper
         {
             return new ClienteResponse()
             {
-                Id = cliente.Id.ToString(),
+                IdCliente = cliente.IdCliente.ToString(),
                 Nome = cliente.Nome,
                 Contato = cliente.Contato
             };

@@ -7,7 +7,7 @@ namespace APIEcommerce.Responses
 {
     public class ClienteResponse
     {
-        public string Id { get; set; }
+        public string IdCliente { get; set; }
         public string Nome { get; set; }
         public string Contato { get; set; }
     }

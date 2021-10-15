@@ -8,7 +8,7 @@ namespace APIEcommerce.Requests
 {
     public class PedidoRequest
     {
-        public int Id { get; set; }
+        public int IdPedido { get; set; }
         public DateTime DataCriacao { get; set; }
         public DateTime DataEntrega { get; set; }
         public string Endereco { get; set; }

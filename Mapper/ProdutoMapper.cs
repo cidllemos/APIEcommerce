@@ -10,9 +10,9 @@ namespace APIEcommerce.Mapper
         {
             return new Produto()
             {
-                Id = produtoRequest.Id,
+                IdProduto = produtoRequest.IdProduto,
                 Nome = produtoRequest.Nome,
-                Valor = produtoRequest.Valor,
+                ValorUnitario = produtoRequest.ValorUnitario,
                 Descricao = produtoRequest.Descricao
             };
         }
@@ -21,9 +21,9 @@ namespace APIEcommerce.Mapper
         {
             return new ProdutoResponse()
             {
-                Id = produto.Id.ToString(),
+                IdProduto = produto.IdProduto.ToString(),
                 Nome = produto.Nome,
-                Valor = produto.Valor.ToString(),
+                ValorUnitario = produto.ValorUnitario.ToString(),
                 Descricao = produto.Descricao
             };
         }

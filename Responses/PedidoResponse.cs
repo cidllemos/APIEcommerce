@@ -8,7 +8,7 @@ namespace APIEcommerce.Responses
 {
     public class PedidoResponse
     {
-        public string Id { get; set; }
+        public string IdPedido { get; set; }
         public string DataCriacao { get; set; }
         public string DataEntrega { get; set; }
         public string Endereco { get; set; }

@@ -10,7 +10,8 @@ namespace APIEcommerce.Models
     public class PedidoItem : BaseModel
     {
         [ExplicitKey]
-        public Pedido Pedido { get; set; }
+        public int IdPedidoItem { get; set; }
+        public int IdPedido { get; set; }
         public Produto Produto { get; set; }
         public decimal ValorProduto { get; set; }
         public int Quantidade { get; set; }

@@ -7,7 +7,8 @@ namespace APIEcommerce.Requests
 {
     public class PedidoItemRequest
     {
-        public PedidoRequest Pedido { get; set; }
+        public int IdPedidoItem { get; set; } 
+        public int idPedido { get; set; }
         public ProdutoRequest Produto { get; set; }
         public decimal ValorProduto { get; set; }
         public int Quantidade { get; set; }

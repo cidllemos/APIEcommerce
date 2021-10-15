@@ -7,9 +7,9 @@ namespace APIEcommerce.Requests
 {
     public class ProdutoRequest
     {
-        public int Id { get; set; }
+        public int IdProduto { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
-        public decimal Valor { get; set; }
+        public decimal ValorUnitario { get; set; }
     }
 }

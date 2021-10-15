@@ -10,7 +10,7 @@ namespace APIEcommerce.Models
     public class Cliente : BaseModel
     {
         [ExplicitKey]
-        public int Id { get; set; }
+        public int IdCliente { get; set; }
         public string Nome { get; set; }
         public string Contato { get; set; }
     }

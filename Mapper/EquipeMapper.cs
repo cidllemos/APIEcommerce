@@ -10,7 +10,7 @@ namespace APIEcommerce.Mapper
         {
             return new Equipe()
             {
-                Id = equipe.Id,
+                IdEquipe = equipe.IdEquipe,
                 Nome = equipe.Nome,
                 Descricao = equipe.Descricao,
                 PlacaVeiculo = equipe.PlacaVeiculo
@@ -21,7 +21,7 @@ namespace APIEcommerce.Mapper
         {
             return new EquipeResponse()
             {
-                Id = equipe.Id.ToString(),
+                IdEquipe = equipe.IdEquipe.ToString(),
                 Nome = equipe.Nome,
                 Descricao = equipe.Descricao,
                 PlacaVeiculo = equipe.PlacaVeiculo
