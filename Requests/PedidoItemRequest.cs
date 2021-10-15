@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace APIEcommerce.Requests
+{
+    public class PedidoItemRequest
+    {
+        public PedidoRequest Pedido { get; set; }
+        public ProdutoRequest Produto { get; set; }
+        public decimal ValorProduto { get; set; }
+        public int Quantidade { get; set; }
+    }
+}
