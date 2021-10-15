@@ -11,10 +11,10 @@ namespace APIEcommerce.Mapper
             return new PedidoItem()
             {
                 IdPedidoItem = pedidoItem.IdPedidoItem,
-                IdPedido = pedidoItem.idPedido,
+                IdPedido = pedidoItem.IdPedido,
                 Produto = ProdutoMapper.Mapper(pedidoItem.Produto),
                 Quantidade = pedidoItem.Quantidade,
-                ValorProduto = pedidoItem.ValorProduto
+                Valor = pedidoItem.Valor
             };
         }
 
@@ -22,11 +22,11 @@ namespace APIEcommerce.Mapper
         {
             return new PedidoItemResponse()
             {
-                idPedidoItem = pedidoItem.IdPedidoItem.ToString(),
-                idPedido = pedidoItem.IdPedido.ToString(),
+                IdPedidoItem = pedidoItem.IdPedidoItem.ToString(),
+                IidPedido = pedidoItem.IdPedido.ToString(),
                 Produto = ProdutoMapper.Mapper(pedidoItem.Produto),
                 Quantidade = pedidoItem.Quantidade.ToString(),
-                ValorProduto = pedidoItem.ValorProduto.ToString()
+                Valor = pedidoItem.Valor.ToString()
 
             };
         }

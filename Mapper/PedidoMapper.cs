@@ -31,7 +31,7 @@ namespace APIEcommerce.Mapper
                 Endereco = pedido.Endereco,
                 Cliente = ClienteMapper.Mapper(pedido.Cliente),
                 Equipe = EquipeMapper.Mapper(pedido.Equipe),
-                //Itens = pedido.Itens.Select(x => PedidoItemMapper.Mapper(x)).ToList()
+                Itens = pedido.Itens.Select(x => PedidoItemMapper.Mapper(x)).ToList()
             };
         }
     }

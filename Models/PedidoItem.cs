@@ -13,7 +13,7 @@ namespace APIEcommerce.Models
         public int IdPedidoItem { get; set; }
         public int IdPedido { get; set; }
         public Produto Produto { get; set; }
-        public decimal ValorProduto { get; set; }
+        public decimal Valor { get; set; }
         public int Quantidade { get; set; }
 
     }
